@@ -1,8 +1,13 @@
 import Head from "next/head";
+import Header from "../components/header";
+import Sidebar from "../components/sidebar";
+
+import settings from "../data/settings";
 
 export default function Home() {
+  // console.log(JSON.stringify(settings));
   return (
-    <div>
+    <>
       <Head>
         <title>Riccardo Sacco</title>
         <meta
@@ -29,9 +34,14 @@ export default function Home() {
         />
       </Head>
 
-      <main></main>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <div className="flex flex-1 h-full">
+          <Sidebar />
+        </div>
 
-      <footer></footer>
-    </div>
+        <footer></footer>
+      </div>
+    </>
   );
 }
