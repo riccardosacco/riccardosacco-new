@@ -34,10 +34,11 @@ export default function Home() {
         />
       </Head>
 
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen dark:bg-dark">
         <Header />
-        <div className="flex flex-1 h-full">
-          <Sidebar />
+        <Sidebar />
+        <div className="flex flex-1 h-full p-6 mt-16 ml-64">
+          <div></div>
         </div>
 
         <footer></footer>
